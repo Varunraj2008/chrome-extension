@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Changer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Change Background Color</h3>
+    
+    <div class="color-section">
+      <label for="colorPicker">Choose Color:</label>
+      <input type="color" id="colorPicker" value="#ffffff">
+    </div>
+    
+    <div class="preset-section">
+      <label>Quick Colors:</label>
+      <div class="preset-colors">
+        <button class="color-btn" data-color="#ffffff" style="background-color: #ffffff;"></button>
+        <button class="color-btn" data-color="#f0f0f0" style="background-color: #f0f0f0;"></button>
+        <button class="color-btn" data-color="#ffeb3b" style="background-color: #ffeb3b;"></button>
+        <button class="color-btn" data-color="#4caf50" style="background-color: #4caf50;"></button>
+        <button class="color-btn" data-color="#2196f3" style="background-color: #2196f3;"></button>
+        <button class="color-btn" data-color="#ff5722" style="background-color: #ff5722;"></button>
+        <button class="color-btn" data-color="#9c27b0" style="background-color: #9c27b0;"></button>
+        <button class="color-btn" data-color="#000000" style="background-color: #000000;"></button>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="applyBtn" class="apply-btn">Apply</button>
+      <button id="resetBtn" class="reset-btn">Reset</button>
+    </div>
+    
+    <div id="status" class="status"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
